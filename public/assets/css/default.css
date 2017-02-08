@@ -61,8 +61,12 @@ textarea {
     background-color: #4E4E4E;
 }
 
+.head .right {
+    padding-top: 6px !important;
+    color: #B7B7B7;
+}
+
 .selection-area, .translation-area {
-    min-height: 550px;
     border: 2px solid #5F5F5F;
     border-radius: 4px;
     background-color: #F3F3F3;
@@ -78,6 +82,49 @@ textarea {
     background-color: #FFFFFF;
 }
 
+.keys-list {
+    overflow: auto;
+    min-height: 182px;
+    max-height: calc(100vh - 305px);
+    margin-top: 15px;
+}
+
+.resource-key {
+    display: block;
+    margin-bottom: 3px;
+    padding: 7px 12px;
+    border-radius: 4px;
+    background-color: #E0E0E0;
+    color: #696969;
+    font-size: 14px;
+}
+
+.resource-key:hover {
+    text-decoration: none;
+    border-left: 5px solid #636363;
+    background-color: #717171;
+    color: #F7F7F7;
+}
+
+.resource-key.active {
+    border-left: 5px solid #42C299;
+    background-color: #2C2D31;
+    color: #F7F7F7;
+}
+
+.resource-key.active:hover {
+    text-decoration: none;
+}
+
+.resource-key .key {
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.resource-key .text {
+    font-size: 12px;
+}
+
 #translation-form .uk-link span:last-of-type {
     font-weight: 400;
     font-size: 14px;
@@ -91,4 +138,8 @@ textarea {
 
 #translation-first, #translation-second {
     margin-bottom: 10px;
+}
+
+.next, .prev {
+    color: #9E9E9E;
 }
