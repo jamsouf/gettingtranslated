@@ -36,7 +36,7 @@
             <div class="resource-selection uk-margin-large-right">
                 <h3>webapp</h3>
                 <a href="{{ url('editor') }}">website</a>
-                <a href="{{ url('editor') }}{{ url('editor') }}">offer</a>
+                <a href="{{ url('editor') }}">offer</a>
                 <a href="{{ url('editor') }}">newsletter</a>
             </div>
             <div class="resource-selection uk-margin-large-right">
@@ -46,7 +46,7 @@
             </div>
             <div class="resource-selection uk-margin-large-right">
                 <h3>ui-ux-blog</h3>
-                <a href="{{ url('editor') }}{{ url('editor') }}">interface</a>
+                <a href="{{ url('editor') }}">interface</a>
                 <a href="{{ url('editor') }}">design</a>
                 <a href="{{ url('editor') }}">web</a>
                 <a href="{{ url('editor') }}">mobile</a>
