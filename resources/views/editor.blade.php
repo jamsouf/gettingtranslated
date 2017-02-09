@@ -16,15 +16,23 @@
 <body>
 
 <div uk-grid uk-sticky class="head">
-    <div class="left uk-width-1-2 uk-margin-bottom uk-padding-remove bg-white">
+    <div class="left uk-width-1-3 uk-margin-bottom uk-padding-remove bg-white">
         <div class="uk-padding-small">
             <a href="{{ url('/') }}"><img src="{{ asset('assets/img/logo.png') }}" width="110"></a>
         </div>
     </div>
-    <div class="right uk-width-1-2 uk-margin-bottom uk-padding-remove bg-white uk-text-right">
+    <div class="middle uk-width-1-3 uk-margin-bottom uk-padding-remove bg-white uk-text-center">
         <div class="uk-padding-small">
-            <span uk-icon="icon: warning"></span>
-            <span class="uk-label uk-label-warning uk-text-middle">Unsaved changes</span>
+            <a href="{{ url('/') }}" class="uk-button uk-button-default uk-button-small uk-text-muted" title="Change resource" uk-tooltip>
+                webapp / website <span uk-icon="icon: sign-out"></span>
+            </a>
+        </div>
+    </div>
+    <div class="right uk-width-1-3 uk-margin-bottom uk-padding-remove bg-white uk-text-right">
+        <div class="uk-padding-small">
+            <a href="#" class="uk-button uk-button-success-outline uk-button-small">
+                <span uk-icon="icon: push"></span> Save changes
+            </a>
         </div>
     </div>
 </div>
@@ -37,15 +45,11 @@
                     <span uk-search-icon></span>
                     <input class="uk-search-input" type="search" placeholder="Search...">
                 </form>
-                <div class="uk-margin-small">
-                    <a href="#" title="Select a bundle" uk-tooltip="pos: bottom"><span class="uk-icon-link uk-margin-small-right" uk-icon="icon: folder"></span></a>
-                    <a href="#"><span class="uk-label uk-label-red-dark">myproject</span></a>
-                </div>
-                <div class="uk-margin-small">
-                    <a href="#" title="Select a resource" uk-tooltip="pos: bottom"><span class="uk-icon-link uk-margin-small-right" uk-icon="icon: file"></span></a>
-                    <a href="#"><span class="uk-label uk-label-red-light">website</span></a>
-                    <a href="#"><span class="uk-label uk-label-red-light">offer</span></a>
-                </div>
+                <ul class="uk-iconnav">
+                    <li><a href="#" uk-icon="icon: plus" title="Add key" uk-tooltip></a></li>
+                    <li><a href="#" uk-icon="icon: file-edit" title="Rename key" uk-tooltip></a></li>
+                    <li><a href="#" uk-icon="icon: trash" title="Delete key" uk-tooltip></a></li>
+                </ul>
                 <div class="keys-list scrollbar-inner" style="padding-right:14px">
                     <a href="#" class="resource-key">
                         <div class="key">email</div>
@@ -103,6 +107,10 @@
                         <div class="key">newsletter_join</div>
                         <div class="text">Join our Newsletter</div>
                     </a>
+                    <a href="#" class="resource-key">
+                        <div class="key">email</div>
+                        <div class="text">Email</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -149,6 +157,7 @@
 
 <script>
     $(document).ready(function () {
+        $(window).trigger('resize');
         $('.scrollbar-inner').scrollbar();
     });
 </script>

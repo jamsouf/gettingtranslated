@@ -1,5 +1,9 @@
 <?php
 
-$app->get('/', function () use ($app) {
-    return view('main');
+$app->get('/', function () {
+    return view('dashboard');
+});
+
+$app->get('editor', function () {
+    return view('editor');
 });
