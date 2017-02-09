@@ -1,17 +1,17 @@
 {
     "bundles": [
         {
-            "name": "umex",
+            "name": "webapp",
             "format": "php-array",
             "locales": [
                 "en",
                 "de"
             ],
             "resource": {
-                "path": "/var/www/umex/htdocs/resources/lang/{locale}/",
+                "path": "/var/www/webapp/htdocs/resources/lang/{locale}/",
                 "files": [
                     "website.php",
-                    "offer.php"
+                    "newsletter.php"
                 ]
             }
         }
