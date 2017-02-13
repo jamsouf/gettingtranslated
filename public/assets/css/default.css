@@ -174,8 +174,8 @@ textarea {
     margin-bottom: 3px;
     padding: 7px 12px;
     border-radius: 4px;
-    background-color: #E0E0E0;
-    color: #696969;
+    background-color: #D8D8D8;
+    color: #313131;
     font-size: 14px;
 }
 
@@ -183,13 +183,13 @@ textarea {
     text-decoration: none;
     border-left: 5px solid #636363;
     background-color: #717171;
-    color: #F7F7F7;
+    color: #FBFBFB;
 }
 
 .resource-key.active {
     border-left: 5px solid #42C299;
     background-color: #2C2D31;
-    color: #F7F7F7;
+    color: #FBFBFB;
 }
 
 .resource-key.active:hover {

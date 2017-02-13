@@ -63,13 +63,13 @@
                         <div class="key">no_results_found</div>
                         <div class="text">Sorry, no results were found.</div>
                     </a>
-                    <a href="#" class="resource-key">
-                        <div class="key">special_offers</div>
-                        <div class="text">Special Offers</div>
-                    </a>
                     <a href="#" class="resource-key active">
                         <div class="key">following_fields_required</div>
                         <div class="text">The following fields are required:</div>
+                    </a>
+                    <a href="#" class="resource-key">
+                        <div class="key">special_offers</div>
+                        <div class="text">Special Offers</div>
                     </a>
                     <a href="#" class="resource-key">
                         <div class="key">newsletter_join</div>
