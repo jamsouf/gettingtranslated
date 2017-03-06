@@ -6,7 +6,8 @@
         "editor",
         "i18n",
         "l10n",
-        "internationalization"
+        "internationalization",
+        "localization"
     ],
     "authors": [
         {

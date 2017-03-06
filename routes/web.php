@@ -1,9 +1,4 @@
 <?php
 
-$app->get('/', function () {
-    return view('dashboard');
-});
-
-$app->get('editor', function () {
-    return view('editor');
-});
+$app->get('/', 'DashboardController@index');
+$app->get('editor/{bundle}/{resource}', 'EditorController@index');

@@ -202,6 +202,8 @@ textarea {
 }
 
 .resource-key .text {
+    height: 15px;
+    overflow: hidden;
     font-size: 12px;
 }
 
@@ -212,8 +214,7 @@ textarea {
 
 #translation-form textarea {
     display: block;
-    resize: none;
-    height: 100px;
+    height: 125px;
 }
 
 #translation-first, #translation-second {

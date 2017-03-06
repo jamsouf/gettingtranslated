@@ -3,16 +3,18 @@
         {
             "name": "webapp",
             "format": "php-array",
-            "locales": [
-                "en",
-                "de"
-            ],
+            "locales": {
+                "en": "English",
+                "de": "German",
+                "ru": "Russian",
+                "tr": "Turkish"
+            },
             "resource": {
                 "path": "/var/www/webapp/htdocs/resources/lang/{locale}/",
-                "files": [
-                    "website.php",
-                    "newsletter.php"
-                ]
+                "files": {
+                    "newsletter.php": "newsletter",
+                    "website.php": "website"
+                }
             }
         }
     ]
