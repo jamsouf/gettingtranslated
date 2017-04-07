@@ -12,6 +12,7 @@
     <script src="{{ asset('libs/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('libs/jquery/jquery.scrollbar.min.js') }}"></script>
     <script src="{{ asset('libs/uikit/js/uikit.min.js') }}"></script>
+    <script src="{{ asset('libs/uikit/js/uikit-icons.min.js') }}"></script>
 </head>
 <body>
 
