@@ -1,4 +1,4 @@
-# gettranslated
+# gettranslated (project in draft mode)
 Web-based Translation Editor
 
 ### Requirements
